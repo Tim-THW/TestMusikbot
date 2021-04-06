@@ -24,7 +24,7 @@ bot.on('message', (msg)=>{
 
 bot.on("message", function(message) {
     if(message.content === "?help"){
-        let embed = new Client.MessageEmbed()
+        let embed = new Discord.MessageEmbed()
         .setTitle("**Die Hilfe**")
         .addField("?play")
         .setColor("RANDOM")
