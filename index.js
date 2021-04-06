@@ -1,4 +1,4 @@
-const {Client,} = require('discord.js');
+const {Client} = require('discord.js');
 const { play, stop } = require('./command.js');
 const bot = new Client();
 
@@ -20,9 +20,19 @@ bot.on('message', (msg)=>{
     return stop(msg, args);
 
 
-
-
 });
+
+bot.on("message", function(message) {
+    if(message.content === "?help"){
+        let embed = new Client.MessageEmbed()
+        .setTitle("**Die Hilfe**")
+        .addField("?play")
+        .setColor("RANDOM")
+        .setFooter(">Ist halt play, nur wen Lied zu ende ist,sonst Skip.")
+
+        message.channel.send(embed);
+    }
+})
 
 function getCommandName(prefix, content) {
     return content
@@ -37,4 +47,4 @@ function getCommandArgs(prefix, content) {
     .slice(1);
 }
 
-bot.login(process.env.token);
+bot.login("ODA2MTMwMzEyNjM1MDg4OTA2.YBk9Ww.uhT6grv9rko5JECmRa89-j4uQB8");
