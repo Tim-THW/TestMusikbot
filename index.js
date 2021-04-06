@@ -47,4 +47,3 @@ function getCommandArgs(prefix, content) {
     .slice(1);
 }
 
-bot.login("ODA2MTMwMzEyNjM1MDg4OTA2.YBk9Ww.uhT6grv9rko5JECmRa89-j4uQB8");
