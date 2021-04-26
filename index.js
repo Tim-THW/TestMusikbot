@@ -28,7 +28,7 @@ bot.on("message", function(message) {
         .setTitle("**Die Hilfe**")
         .addField("?play")
         .setColor("RANDOM")
-        .setFooter(">Ist halt play, nur wen Lied zu ende ist,sonst Skip.")
+        .setFooter("Ist halt play, nur wen Lied zu ende ist,sonst Skip.")
 
         message.channel.send(embed);
     }
